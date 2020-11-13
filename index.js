@@ -25,14 +25,20 @@ myFunction();
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 function summation(number) {
+  const arrNum= [];
+
   for(let i = 0 ; i <= number ;i++){
-    
-    
+    arrNum.push(i)
   }
+
+  const total = arrNum.reduce(function(accu, item,index){
+    return accu + item[index.length];
+
+  },0);
     
 }
 
-console.log(summation(4))
+console.log(summation(4));
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
